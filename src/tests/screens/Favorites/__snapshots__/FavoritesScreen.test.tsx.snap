@@ -1,0 +1,511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavoritesScreen should render without crashing 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+      "paddingTop": 10,
+    }
+  }
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListEmptyComponent={[Function]}
+    data={
+      [
+        {
+          "adult": false,
+          "backdrop_path": "/a2tys4sD7xzVaogPntGsT1ypVoT.jpg",
+          "genre_ids": [
+            53,
+            35,
+            80,
+            27,
+          ],
+          "id": 804150,
+          "original_language": "en",
+          "original_title": "Cocaine Bear",
+          "overview": "Inspired by a true story, an oddball group of cops, criminals, tourists and teens converge in a Georgia forest where a 500-pound black bear goes on a murderous rampage after unintentionally ingesting cocaine.",
+          "popularity": 2946.378,
+          "poster_path": "/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg",
+          "release_date": "2023-02-22",
+          "title": "Cocaine Bear",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 518,
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/kmzppWh7ljL6K9fXW72bPN3gKwu.jpg",
+          "genre_ids": [
+            28,
+            35,
+            14,
+            80,
+          ],
+          "id": 1013860,
+          "original_language": "en",
+          "original_title": "R.I.P.D. 2: Rise of the Damned",
+          "overview": "When Sheriff Roy Pulsipher finds himself in the afterlife, he joins a special police force and returns to Earth to save humanity from the undead.",
+          "popularity": 315.119,
+          "poster_path": "/g4yJTzMtOBUTAR2Qnmj8TYIcFVq.jpg",
+          "release_date": "2022-11-15",
+          "title": "R.I.P.D. 2: Rise of the Damned",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 440,
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/dKqa850uvbNSCaQCV4Im1XlzEtQ.jpg",
+          "genre_ids": [
+            35,
+            80,
+            9648,
+          ],
+          "id": 661374,
+          "original_language": "en",
+          "original_title": "Glass Onion: A Knives Out Mystery",
+          "overview": "World-famous detective Benoit Blanc heads to Greece to peel back the layers of a mystery surrounding a tech billionaire and his eclectic crew of friends.",
+          "popularity": 222.228,
+          "poster_path": "/vDGr1YdrlfbU9wxTOdpf3zChmv9.jpg",
+          "release_date": "2022-11-23",
+          "title": "Glass Onion: A Knives Out Mystery",
+          "video": false,
+          "vote_average": 7.1,
+          "vote_count": 3829,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    getItemLayout={[Function]}
+    initialNumToRender={6}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={1}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={true}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    testID="favorite-list"
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "flex-start",
+                "gap": 10,
+                "height": 634.5,
+                "justifyContent": "flex-start",
+                "marginHorizontal": 11.25,
+                "width": 352.5,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "height": 528.75,
+                }
+              }
+            >
+              <View
+                style={{}}
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                      "right": 5,
+                      "top": 5,
+                      "zIndex": 999,
+                    }
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": 12.5,
+                        "height": 25,
+                        "justifyContent": "center",
+                        "opacity": 1,
+                        "width": 25,
+                      }
+                    }
+                    testID="804150"
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#0d9488",
+                            "fontSize": 16,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "Ionicons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+                <Image
+                  source={
+                    {
+                      "uri": "https://image.tmdb.org/t/p/w200/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg",
+                    }
+                  }
+                  style={
+                    {
+                      "borderRadius": 10,
+                      "height": "100%",
+                      "width": 352.5,
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Cocaine Bear
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "alignItems": "flex-start",
+                "gap": 10,
+                "height": 634.5,
+                "justifyContent": "flex-start",
+                "marginHorizontal": 11.25,
+                "width": 352.5,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "height": 528.75,
+                }
+              }
+            >
+              <View
+                style={{}}
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                      "right": 5,
+                      "top": 5,
+                      "zIndex": 999,
+                    }
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": 12.5,
+                        "height": 25,
+                        "justifyContent": "center",
+                        "opacity": 1,
+                        "width": 25,
+                      }
+                    }
+                    testID="1013860"
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#0d9488",
+                            "fontSize": 16,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "Ionicons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+                <Image
+                  source={
+                    {
+                      "uri": "https://image.tmdb.org/t/p/w200/g4yJTzMtOBUTAR2Qnmj8TYIcFVq.jpg",
+                    }
+                  }
+                  style={
+                    {
+                      "borderRadius": 10,
+                      "height": "100%",
+                      "width": 352.5,
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              R.I.P.D. 2: Rise of the Damned
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "height": 10,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "flex-start",
+                "gap": 10,
+                "height": 634.5,
+                "justifyContent": "flex-start",
+                "marginHorizontal": 11.25,
+                "width": 352.5,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "height": 528.75,
+                }
+              }
+            >
+              <View
+                style={{}}
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                      "right": 5,
+                      "top": 5,
+                      "zIndex": 999,
+                    }
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": 12.5,
+                        "height": 25,
+                        "justifyContent": "center",
+                        "opacity": 1,
+                        "width": 25,
+                      }
+                    }
+                    testID="661374"
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#0d9488",
+                            "fontSize": 16,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "Ionicons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+                <Image
+                  source={
+                    {
+                      "uri": "https://image.tmdb.org/t/p/w200/vDGr1YdrlfbU9wxTOdpf3zChmv9.jpg",
+                    }
+                  }
+                  style={
+                    {
+                      "borderRadius": 10,
+                      "height": "100%",
+                      "width": 352.5,
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Glass Onion: A Knives Out Mystery
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
