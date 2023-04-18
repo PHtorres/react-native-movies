@@ -6,21 +6,19 @@ import { useGenres } from '../state/hooks/useGenres';
 import { useLoading } from '../state/hooks/useLoading';
 
 export function GenresProvider({ children }: PropsWithChildren) {
-  const { data, isLoading, isFetching } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: requestsKeys.genre_movie_list,
     queryFn: genres.getGenreMovieList,
   });
-
-  const isLoadingGenres = isLoading || isFetching;
 
   const { closeLoading } = useLoading();
   const { setGenres } = useGenres();
 
   useEffect(() => {
-    if (!isLoadingGenres) {
+    if (!isLoading) {
       closeLoading();
     }
-  }, [isLoadingGenres]);
+  }, [isLoading]);
 
   useEffect(() => {
     data?.data && setGenres(data.data.genres);

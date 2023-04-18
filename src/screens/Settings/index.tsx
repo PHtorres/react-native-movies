@@ -23,6 +23,11 @@ import { memo } from 'react';
 import { IS_IOS } from '../../utils/constants';
 import { elementsIds } from '../../tests/elementsIds';
 
+/**
+ * To ensure that the keyboard will not be displayed over the form area
+ */
+const KEYBOARD_VERTICAL_OFFSET = 50;
+
 export function Settings() {
   const { goBack } = useNavigation();
   const insets = useSafeAreaInsets();
@@ -35,24 +40,29 @@ export function Settings() {
 
   return (
     <KeyboardAvoidingView
-      style={[
-        screenStyles.container,
-        {
-          paddingBottom: insets.bottom,
-        },
-      ]}
       behavior={IS_IOS ? 'padding' : 'height'}
+      style={{ flex: 1 }}
+      keyboardVerticalOffset={KEYBOARD_VERTICAL_OFFSET}
     >
-      <ScrollView contentContainerStyle={styles.wrapper}>
-        <SortBy />
-        <Genres />
-        <Year />
-        <Runtime />
-      </ScrollView>
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity activeOpacity={0.7} style={styles.button} onPress={handleSave}>
-          <Text style={styles.buttonText}>Save</Text>
-        </TouchableOpacity>
+      <View
+        style={[
+          screenStyles.container,
+          {
+            paddingBottom: insets.bottom,
+          },
+        ]}
+      >
+        <ScrollView contentContainerStyle={styles.wrapper}>
+          <SortBy />
+          <Genres />
+          <Year />
+          <Runtime />
+        </ScrollView>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity activeOpacity={0.7} style={styles.button} onPress={handleSave}>
+            <Text style={styles.buttonText}>Save</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </KeyboardAvoidingView>
   );
@@ -165,7 +175,7 @@ function Genre({ name, selected, onSelect }: OptionProps) {
       activeOpacity={0.7}
       onPress={onSelect}
     >
-      <Text style={[selected ? styles.selectedGenreText : undefined]}>{name}</Text>
+      <Text style={[selected ? styles.selectedGenreText : styles.optionLabel]}>{name}</Text>
       {selected && (
         <Icon
           testID={`genre-option-icon-${name}-selected`}
@@ -186,7 +196,7 @@ function SortOption({ name, selected, onSelect }: OptionProps) {
       activeOpacity={0.7}
       onPress={onSelect}
     >
-      <Text>{name}</Text>
+      <Text style={styles.optionLabel}>{name}</Text>
       <Icon
         testID={`sort-option-icon-${name}-${selected ? 'selected' : ''}`}
         name={selected ? 'checkmark-circle' : 'ellipse-outline'}

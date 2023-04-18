@@ -51,6 +51,9 @@ export const styles = StyleSheet.create({
       borderBottomColor: colors.light,
       borderBottomWidth: 1,
     },
+    optionLabel: {
+      color: colors.black,
+    },
     buttonContainer: {
       backgroundColor: colors.white,
       borderTopWidth: 1,
