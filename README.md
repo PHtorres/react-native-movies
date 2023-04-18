@@ -54,7 +54,7 @@ IOS
 - Typescript
 - React Navigation v6
 - Zustand
-- Shopify/FlashLst
+- Shopify/FlashList
 - React Query
 - Axios
 - Jest
